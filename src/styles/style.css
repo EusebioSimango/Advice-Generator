@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Manrope;
 }
 
 .attribution {
@@ -10,5 +11,38 @@
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+#advice {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323a49;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+#adviceHead {
+  color: #52ffa8;
+
+}
+
+#adviceMessage {
+  color: #cee3e9;
+  min-height: 100px;
+  width: 80%;
+  text-align: center;
 }
