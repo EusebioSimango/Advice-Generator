@@ -42,7 +42,7 @@ body {
   top: 20px;
 }
 
-div.nextAdvice {
+div#nextAdvice {
   background-color: #52ffa8;
   height: 34px;
   width: 34px;
