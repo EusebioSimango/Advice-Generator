@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Manrope;
+    font-weight: 800;
 }
 
 .attribution {
@@ -30,9 +31,19 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #323a49;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   gap: 10px;
+}
+
+#advice img.divider {
+  width: 90%;
+}
+
+#advice img.diceIcon {
+  height: 24px;
+  width: 24px;
+  background-color: #52ffa8;
 }
 
 #adviceHead {
@@ -42,7 +53,7 @@ body {
 
 #adviceMessage {
   color: #cee3e9;
-  min-height: 100px;
   width: 80%;
   text-align: center;
+  font-size: 20px;
 }
