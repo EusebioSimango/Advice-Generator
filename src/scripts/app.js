@@ -15,16 +15,19 @@ const fetchAdvice = () => {
   .then(json => json.slip)
   .then(advice => {
     renderAdvice(advice)
-  })
+  }).catch(error => console.error(error))
 }
 
 fetchAdvice()
 
 
-
-
-const sortAdvice = () => {
+const sortAdvice = async () => {
+  nextAdviceEl.firstElementChild.classList.add("spin")
+  setTimeout(() => {
+    nextAdviceEl.firstElementChild.classList.remove("spin")
+  }, 700)
   fetchAdvice()
+
 }
 
 nextAdviceEl.addEventListener("click", sortAdvice)
